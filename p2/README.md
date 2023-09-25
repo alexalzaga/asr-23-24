@@ -48,10 +48,11 @@ c) Modificar la configuración de nginx en el webserver para que sólo escuche e
 ![healthfirewallp3](/p2/healthfirewallp3.png)
 
 3. Mediante scp subimos asr.es.crt y KEY.key al webserver, pasando por el jump server. Modificamos /etc/nginx/sites-enabled/default para que sólo escuche por el puerto 443 y use selfconfig.conf, nuestro archivo de configuración que especifica el uso de nuestro certificado y clave.
+
 ![configp3](/p2/configp3.png)
 ![nginxconfp3](/p2/nginxconfp3.png)
 
-4. Comprobamos la conexión, que ahora se debe hacer especificando el puerto en la barra de búsqueda.
+5. Comprobamos la conexión, que ahora se debe hacer especificando el puerto en la barra de búsqueda.
 ![conexionp3](/p2/conexionp3.png)
 
 ## Parte 4: posibles mejoras
